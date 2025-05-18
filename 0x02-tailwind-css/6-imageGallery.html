@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Flexbox Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+            <style>
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="p-4">
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-3xl">Grid and Flexbox Layout</h1>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+        <section class="lg:col-span flex">
+            <div class="p-4 bg-red-200">Flexbox Item 1</div>
+            <div class="p-4 bg-red-400">Flexbox Item 2</div>
+        </section>
+        <aside class="bg-green-200 p-4">Sidebar</aside>
+        <saection class="lg:col-span-3 mt-8">
+            <div class="grid grid-cols-1  lg:grid-cols-3 sm:grid-cols-2 gap-4">
+                <img src="https://picsum.photos/id/13/200/300" alt="Nature" 
+                class="w-full h-auto rounded-lg shadow-md">
+                <img src="https://picsum.photos/id/20/200/300" alt="lifetsyle" 
+                class="w-full h-auto rounded-lg shadow-md">
+                <img src="https://picsum.photos/id/26/200/300" alt="Lifestyle pro" 
+                class="w-full h-auto rounded-lg shadow-md">
+            </div>
+        </saection>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 mt-4">
+        <p>&copy; 2024 John Doe's Blog</p>
+    </footer>
+</body>
+</html>

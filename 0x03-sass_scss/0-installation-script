@@ -1,0 +1,45 @@
+
+## Installing and Running Sass on Windows
+
+1. **Created a new folder** called `0x03-sass_scss`.
+
+2. **Changed directory** into the newly created folder using the terminal.
+
+3. **Visited the official Sass website** to check the documentation and understand the installation process.
+
+4. **Installed Sass globally** using the command:
+
+   ```bash
+   npm install -g sass
+   ```
+
+5. **Ran** `npm fund` to confirm the installed packages and directory structure.
+
+6. **Created the following `.scss` files** for practice:
+
+   * `0-installation-script.scss`
+   * `0-debug_log.scss`
+   * `1-color_variable.scss`
+   * `2-nested_tag.scss`
+   * `3-mixin_margins.scss`
+
+7. **Watched each file** using the Sass compiler by running:
+
+   ```bash
+   sass --watch input.scss output.css
+   ```
+
+8. **Faced an issue with Windows PowerShell**, which by default restricts script execution due to security policies.
+
+9. **Resolved the script execution issue** by:
+
+   * Opening PowerShell **as Administrator**.
+   * Running the following command to change the execution policy:
+
+     ```powershell
+     Set-ExecutionPolicy RemoteSigned
+     ```
+
+10. **Returned to the terminal** and successfully executed the `sass --watch` command for each `.scss` file.
+
+
